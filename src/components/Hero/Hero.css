@@ -1,0 +1,180 @@
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .left-side {
+  padding: 2rem;
+  padding-top: 1.3rem;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.hero .left-side .the-best-ad {
+  margin-top: 4rem;
+  background-color: #343d42;
+  border-radius: 4rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.3rem 0.8rem;
+  text-transform: uppercase;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+.hero .left-side .the-best-ad .slider {
+  position: absolute;
+  background-color: var(--orange);
+  width: 5.4rem;
+  height: 80%;
+  left: 8px;
+  border-radius: 3rem;
+  z-index: 1;
+}
+
+.hero .left-side .the-best-ad > span {
+  z-index: 2;
+}
+
+.hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: white;
+  text-overflow: inherit;
+}
+
+.hero-description {
+  font-size: 1rem;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 1px;
+  width: 80%;
+  color: white;
+}
+
+.figures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.figures > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.figures > div > span:nth-of-type(1) {
+  font-size: 2rem;
+  color: white;
+}
+
+.figures > div > span:nth-of-type(2) {
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.hero-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  font-weight: normal;
+}
+
+.hero-buttons > :nth-child(1) {
+  color: white;
+  background: var(--orange);
+  width: 8rem;
+}
+
+.hero-buttons > :nth-child(2) {
+  width: 8rem;
+  color: white;
+  background-color: transparent;
+  border: 2px solid var(--orange);
+}
+
+.right-side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  background-color: var(--orange);
+  z-index: -1;
+}
+
+.right-side > .btn {
+  position: absolute;
+  right: 5rem;
+  top: 6rem;
+  color: black;
+}
+
+.right-side .hero_image {
+  position: absolute;
+  top: 10rem;
+  right: 8rem;
+  width: 23rem;
+  z-index: 1;
+}
+
+.right-side .hero_image_back {
+  position: absolute;
+  top: 4rem;
+  right: 20rem;
+  width: 11rem;
+}
+
+.right-side .calories {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  background: var(--caloryCard);
+  border-radius: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+/*# sourceMappingURL=Hero.css.map */
