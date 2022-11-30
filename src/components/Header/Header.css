@@ -1,32 +1,21 @@
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .header .logo {
   width: 10rem;
   height: 3rem;
 }
-
 .header-menu {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 2rem;
   color: white;
   font-weight: bold;
   padding-right: 2rem;
 }
-
 .header-menu > li:hover {
   color: var(--orange);
   cursor: pointer;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
-}
-/*# sourceMappingURL=Header.css.map */
+}/*# sourceMappingURL=Header.css.map */
