@@ -1,0 +1,70 @@
+.plans-heading {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem 4rem 3rem;
+}
+
+.card {
+  background-color: gray;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.4rem 1rem;
+  gap: 1rem;
+}
+
+.icon > svg {
+  fill: var(--orange);
+  width: 2rem;
+  height: 2rem;
+}
+
+.card > .title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card > .price {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tick {
+  margin-right: 1rem;
+  width: 1rem;
+}
+
+.card > .more {
+  font-weight: normal;
+  font-size: 0.7rem;
+}
+
+/* premium card */
+.plans > :nth-child(2) {
+  background: var(--planCard);
+  transform: scale(1.1);
+}
+.plans > :nth-child(2) > .icon > svg {
+  fill: white;
+}
+
+.plans > :nth-child(2) > .btn {
+  color: var(--orange);
+}
