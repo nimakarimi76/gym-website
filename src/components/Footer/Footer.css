@@ -33,3 +33,18 @@
   opacity: 0.8;
   width: 11rem;
 }
+
+.footer-blur-1 {
+  width: 26rem;
+  height: 13rem;
+  left: 15%;
+  background: rgb(215, 44, 44);
+  filter: blur(200px);
+}
+.footer-blur-2 {
+  width: 26rem;
+  height: 13rem;
+  right: 15%;
+  filter: blur(200px);
+  background: rgb(215, 44, 44);
+}

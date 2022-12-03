@@ -9,6 +9,8 @@ import Logo from "../../assets/logo.png";
 const Footer = () => {
   return (
     <div className="footer-container">
+      <div className="blur footer-blur-1" />
+      <div className="blur footer-blur-2" />
       <hr />
       <div className="social-media">
         <a href="https://github.com/nimakarimi76" target="_blank">
