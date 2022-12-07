@@ -4,10 +4,15 @@ import Header from "../Header/Header";
 
 import hero_image from "../../assets/hero_image.png";
 import hero_image_back from "../../assets/hero_image_back.png";
-
 import calories from "../../assets/calories.png";
 
+import { motion } from "framer-motion";
+
 const Hero = () => {
+  const transition = {
+    type: "sp",
+    duration: 3,
+  };
   return (
     <div className="hero">
       <div className="blur hero-blur" />
@@ -16,7 +21,12 @@ const Hero = () => {
 
         {/* The best add and the slider */}
         <div className="the-best-ad">
-          <div className="slider"></div>
+          <motion.div
+            className="slider"
+            initial={{ left: "158px" }}
+            whileInView={{ left: "8px" }}
+            transition={transition}
+          ></motion.div>
           <span>The best club in the city</span>
         </div>
 
@@ -62,7 +72,10 @@ const Hero = () => {
         <button className="btn">Join Now</button>
 
         <img src={hero_image} alt="hero_image" className="hero_image" />
-        <img
+        <motion.img
+          initial={{ right: "11rem" }}
+          whileInView={{ right: "22rem" }}
+          transition={{ ...transition, type: "tween", duration: 2 }}
           src={hero_image_back}
           alt="hero_image_back"
           className="hero_image_back"

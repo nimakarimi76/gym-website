@@ -13,19 +13,31 @@ const Footer = () => {
       <div className="blur footer-blur-2" />
       <hr />
       <div className="social-media">
-        <a href="https://github.com/nimakarimi76" target="_blank">
-          <img src={Github} />
+        <a
+          href="https://github.com/nimakarimi76"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={Github} alt="github" />
         </a>
-        <a href="https://www.instagram.com/nima.__.karimi/" target="_blank">
-          <img src={Instagram} />
+        <a
+          href="https://www.instagram.com/nima.__.karimi/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={Instagram} alt="instagram" />
         </a>
-        <a href="https://www.linkedin.com/in/nimakarimi97/" target="_blank">
-          <img src={Linkedin} />
+        <a
+          href="https://www.linkedin.com/in/nimakarimi97/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={Linkedin} alt="linkedin" />
         </a>
       </div>
 
       <div className="footer-logo">
-        <img src={Logo} />
+        <img src={Logo} alt="logo" />
       </div>
     </div>
   );

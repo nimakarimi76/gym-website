@@ -113,7 +113,7 @@
   top: 10rem;
   right: 8rem;
   width: 23rem;
-  z-index: 1;
+  z-index: 10;
 }
 .right-side .hero_image_back {
   position: absolute;

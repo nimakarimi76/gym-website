@@ -28,7 +28,7 @@ const Plans = () => {
                 {plan.features.map((feature, index) => {
                   return (
                     <div key={index}>
-                      <img src={whiteTick} className="tick" />
+                      <img src={whiteTick} className="tick" alt="." />
                       {feature}
                     </div>
                   );

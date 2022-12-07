@@ -4,6 +4,8 @@ import { testimonialsData } from "../../data/testimonialsData";
 import leftArrow from "../../assets/leftArrow.png";
 import rightArrow from "../../assets/rightArrow.png";
 
+import { motion } from "framer-motion";
+
 const Testimonials = () => {
   const [selected, setSelected] = useState(0);
 
@@ -20,6 +22,11 @@ const Testimonials = () => {
       : setSelected((prev) => prev + 1);
   };
 
+  const transition = {
+    type: "spring",
+    duration: 3,
+  };
+
   return (
     <div className="testimonials">
       <div className="left-t">
@@ -29,18 +36,37 @@ const Testimonials = () => {
           <span>say about us</span>
         </div>
 
-        <div className="reviews">
+        <motion.div
+          className="reviews"
+          key={selected}
+          initial={{ opacity: 0, x: -100 }}
+          transition={transition}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 100 }}
+        >
           <p>{testimonialsData[selected].review}</p>
           <span>{testimonialsData[selected].name}</span>
           <span> - {testimonialsData[selected].status}</span>
-        </div>
+        </motion.div>
       </div>
       <div className="right-t">
-        <div></div>
-        <div></div>
-        <img
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={transition}
+        ></motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={transition}
+        ></motion.div>
+        <motion.img
           src={testimonialsData[selected].image}
           alt="reviewer profile pic"
+          key={selected}
+          initial={{ opacity: 0, x: -200 }}
+          animate={{ opacity: 1, x: 0 }}
+          // transition={{ transition }}
         />
         <div className="arrows">
           <img onClick={() => handleLeft()} src={leftArrow} />
