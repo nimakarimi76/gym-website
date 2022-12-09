@@ -22,5 +22,27 @@
         transition: all ease-in-out 0.3s;
       }
     }
+
+    @media screen and (max-width: 48rem) {
+      position: fixed;
+      right: 2rem;
+      flex-direction: column;
+      z-index: 100;
+      background: var(--appColor);
+      padding: 2rem;
+      display: none;
+    }
   }
+}
+
+.bars {
+  background: var(--appColor);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  top: 1.5rem;
+  right: 1rem;
+  z-index: 101;
 }
