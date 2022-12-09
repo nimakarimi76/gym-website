@@ -7,6 +7,7 @@ import hero_image_back from "../../assets/hero_image_back.png";
 import calories from "../../assets/calories.png";
 
 import { motion } from "framer-motion";
+import CountUp from "react-countup";
 
 const Hero = () => {
   const transition = {
@@ -49,15 +50,40 @@ const Hero = () => {
         {/* figures */}
         <div className="figures">
           <div>
-            <span>+140</span>
+            <span>
+              <CountUp
+                start={100}
+                end={140}
+                duration={3}
+                prefix="+"
+                useEasing={true}
+              />
+            </span>
             <span>expert coachs</span>
           </div>
           <div>
-            <span>+9k</span>
+            <span>
+              <CountUp
+                start={0}
+                end={9}
+                duration={4}
+                prefix="+"
+                suffix="k"
+                useEasing={true}
+              />
+            </span>
             <span>members joined</span>
           </div>
           <div>
-            <span>+50</span>
+            <span>
+              <CountUp
+                start={10}
+                end={50}
+                duration={7}
+                prefix="+"
+                useEasing={true}
+              />
+            </span>
             <span>fitness programs</span>
           </div>
         </div>

@@ -28,7 +28,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="testimonials">
+    <div className="testimonials" id="testimonials">
       <div className="left-t">
         <div className="testimonials-header">
           <h1>Testimonials</h1>
@@ -69,8 +69,12 @@ const Testimonials = () => {
           // transition={{ transition }}
         />
         <div className="arrows">
-          <img onClick={() => handleLeft()} src={leftArrow} />
-          <img onClick={() => handleRight()} src={rightArrow} />
+          <img onClick={() => handleLeft()} src={leftArrow} alt="leftArrow" />
+          <img
+            onClick={() => handleRight()}
+            src={rightArrow}
+            alt="rightArrow"
+          />
         </div>
       </div>
     </div>
