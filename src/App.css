@@ -60,3 +60,7 @@
   filter: blur(150px);
   z-index: -9;
 }
+
+.active {
+  color: var(--orange) !important;
+}
