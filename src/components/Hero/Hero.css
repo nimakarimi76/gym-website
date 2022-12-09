@@ -132,4 +132,61 @@
   width: fit-content;
   margin: 2rem auto;
   padding: 1rem;
-} /*# sourceMappingURL=Hero.css.map */
+}
+
+@media screen and (max-width: 48rem) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-blur {
+    width: 14rem;
+  }
+
+  .hero .left-side .the-best-ad {
+    margin-top: 0px;
+    font-size: small;
+    align-self: center;
+    transform: scale(0.8);
+  }
+
+  .hero-text {
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-description {
+    font-size: small;
+  }
+
+  .right-side {
+    position: relative;
+    background: none;
+  }
+
+  .right-side .hero_image {
+    position: relative;
+    width: 15rem;
+    left: 8rem;
+    top: 4rem;
+    align-self: center;
+  }
+  .right-side .hero_image_back {
+    align-self: center;
+    width: 7rem;
+    position: relative;
+    top: 4rem;
+    right: -21rem;
+  }
+
+  .right-side .calories {
+    position: relative;
+    top: 4rem;
+  }
+  .right-side > .btn {
+    position: relative;
+    top: 34rem;
+    left: 13rem;
+    z-index: 11;
+  }
+}

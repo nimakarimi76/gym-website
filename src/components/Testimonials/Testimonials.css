@@ -88,3 +88,29 @@
   width: 1.5rem;
   cursor: pointer;
 }
+
+@media screen and (max-width: 48rem) {
+  .testimonials {
+    flex-direction: column;
+  }
+  .right-t {
+    align-items: center;
+    justify-content: center;
+  }
+  .right-t > div {
+    flex-direction: column;
+    display: none;
+  }
+
+  .right-t > img {
+    top: 0;
+    right: 0;
+    position: relative;
+    align-self: center;
+  }
+  .right-t > :last-child {
+    display: block;
+    bottom: -2rem;
+    left: 9rem;
+  }
+}

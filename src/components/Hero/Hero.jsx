@@ -10,9 +10,10 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const transition = {
-    type: "sp",
+    type: "spring",
     duration: 3,
   };
+  const isMobile = window.innerWidth < 768 ? true : false;
   return (
     <div className="hero">
       <div className="blur hero-blur" />
@@ -23,7 +24,7 @@ const Hero = () => {
         <div className="the-best-ad">
           <motion.div
             className="slider"
-            initial={{ left: "158px" }}
+            initial={{ left: isMobile ? "128px" : "178px" }}
             whileInView={{ left: "8px" }}
             transition={transition}
           ></motion.div>
@@ -73,8 +74,8 @@ const Hero = () => {
 
         <img src={hero_image} alt="hero_image" className="hero_image" />
         <motion.img
-          initial={{ right: "11rem" }}
-          whileInView={{ right: "22rem" }}
+          initial={{ right: isMobile ? "3rem" : "11rem" }}
+          whileInView={{ right: isMobile ? "11rem" : "22rem" }}
           transition={{ ...transition, type: "tween", duration: 2 }}
           src={hero_image_back}
           alt="hero_image_back"

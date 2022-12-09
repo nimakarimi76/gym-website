@@ -82,3 +82,26 @@
   height: 23rem;
   right: 0;
 }
+
+@media screen and (max-width: 48rem) {
+  .plans-container {
+    margin-top: 4rem;
+  }
+  .plans-heading {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+  .plans {
+    flex-direction: column;
+  }
+
+  .plans > :nth-child(2) {
+    transform: none;
+  }
+  .plans-blur-1,
+  .plans-blur-2 {
+    display: none;
+  }
+}

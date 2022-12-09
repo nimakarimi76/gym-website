@@ -48,3 +48,11 @@
   filter: blur(200px);
   background: rgb(215, 44, 44);
 }
+
+@media screen and (max-width: 48rem) {
+  .footer-blur-1,
+  .footer-blur-2 {
+    width: 14rem;
+    height: 13rem;
+  }
+}

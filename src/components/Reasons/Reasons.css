@@ -87,3 +87,31 @@
 .partners-icons > img {
   width: 3rem;
 }
+
+@media screen and (max-width: 48rem) {
+  .reasons {
+    flex-direction: column;
+  }
+
+  .left {
+    grid-auto-rows: auto;
+    overflow: hidden;
+  }
+
+  .left > :nth-child(1) {
+    width: 7rem;
+  }
+
+  .left > :nth-child(2) {
+    width: 15rem;
+  }
+
+  .left > :nth-child(3) {
+    height: 11rem;
+    width: 7rem;
+  }
+
+  .left > :nth-child(4) {
+    width: 7rem;
+  }
+}
