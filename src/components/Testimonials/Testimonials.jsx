@@ -12,14 +12,20 @@ const Testimonials = () => {
   const reviewCounts = testimonialsData.length;
 
   const handleLeft = () => {
-    selected === 0
-      ? setSelected(reviewCounts - 1)
-      : setSelected((prev) => prev - 1);
+    const newSelected = (selected - 1 + reviewCounts) % reviewCounts; // * I add the total number to avoid negative numbers
+    setSelected(newSelected);
+
+    // selected === 0
+    //   ? setSelected(reviewCounts - 1)
+    //   : setSelected((prev) => prev - 1);
   };
   const handleRight = () => {
-    selected === reviewCounts - 1
-      ? setSelected(0)
-      : setSelected((prev) => prev + 1);
+    // selected === reviewCounts - 1
+    //   ? setSelected(0)
+    //   : setSelected((prev) => prev + 1);
+
+    const newSelected = (selected + 1) % reviewCounts;
+    setSelected(newSelected);
   };
 
   const transition = {
@@ -28,7 +34,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="testimonials" id="testimonials">
+    <div className="testimonials" id="testimonials">Nimakarimi76
       <div className="left-t">
         <div className="testimonials-header">
           <h1>Testimonials</h1>
